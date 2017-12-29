@@ -1,0 +1,320 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    	<meta charset="utf-16">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/marquee.js"></script>
+        <script src="js/main.js"></script>
+        <link rel="shortcut icon" href="icon.ico"/>
+		
+		
+			<script language="JavaScript">
+		<!-- 
+		var space = " ";
+		var speed = "350";
+		var pos = 0;
+		var msg = "  GreenStreet  ";
+		function Scroll()
+		{
+		document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+		pos++;
+		if (pos > msg.length) pos = 0;
+		window.setTimeout("Scroll()", speed);
+		}
+		Scroll();
+		-->
+			</script>
+</head>
+
+    <body>
+	
+	
+		
+		
+	
+        <div id="center">
+		<div class="animated fadeInDown">
+		<span class="rainbow"><pre style="font-size: 25px">GreenStreet.pw</pre></i></span>
+		</div>
+		<div class="animated fadeIn">
+        <pre><center><span class="rainbow">weaknesses.genocide</span></center></pre>
+        <pre>/<div id="marquee"></div>/</pre>
+		</div>
+		<div class="animated fadeInUp">
+		<pre><a href="http://steamcommunity.com/id/ayylmaoGreenStreet/"" target=_blank>Steam   </a> <a href="http://steamcommunity.com/groups/weaknesses" target=_blank>Weaknesses </a> <a href="http://steamcommunity.com/groups/GENOCIDELIFE" target=_blank>Genocide   </a><a href="https://www.youtube.com/channel/UCuMulLnwH9RIq85wHOSbYiQ" target="_blank">YouTube</a></pre>
+	
+	<style>
+		.clockStyle {
+		font-family: monospace;
+		font-size: 15px;
+		}
+	</style>
+	
+		<center><div id="clockDisplay" class="clockStyle"></div></center>
+		<script>
+			function renderTime() {
+			var currentTime = new Date();
+			var diem = "am";
+			var h = currentTime.getHours();
+			var m = currentTime.getMinutes();
+			var s = currentTime.getSeconds();
+			setTimeout('renderTime()',1000);
+			if (h == 0) {
+				h = 12;
+			} else if (h > 12) { 
+				h = h - 12;
+				diem="pm";
+			}
+			if (h < 10) {
+				h = "0" + h;
+			}
+			if (m < 10) {
+				m = "0" + m;
+			}
+			if (s < 10) {
+				s = "0" + s;
+			}
+			var myClock = document.getElementById('clockDisplay');
+			myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+			myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+			}
+			renderTime();
+		</script>
+	
+		</div>																						
+        </div>
+		
+		<audio autoplay loop id="player">
+		<source src="music.mp3" type="audio/mp3" />
+		<script>
+			var audio = document.currentScript.parentElement;
+			audio.volume = 0.8;
+		</script>
+	</audio>
+		
+		
+		
+		
+		
+		<!--Inspect blocker
+		<video autoplay loop id="video">
+		<source src="media/music.mp4" type="video/mp4">
+		<script>
+		var audio = document.currentScript.parentElement;
+		audio.volume = 0.5;
+		</script>
+		</video>-->
+		
+		<!--Inspect blocker-->
+	<script language="JavaScript">
+		document.onkeypress = function (event) {
+			event = (event || window.event);
+			if (event.keyCode == 123) {
+				return false;
+			}
+		}
+		document.onmousedown = function (event) {
+			event = (event || window.event);
+			if (event.keyCode == 123) {
+				return false;
+			}
+		}
+	document.onkeydown = function (event) {
+			event = (event || window.event);
+			if (event.keyCode == 123) {
+				return false;
+			}
+		}
+	 
+	var message="Sorry, right-click has been disabled";
+	 
+	function clickIE() {if (document.all) {(message);return false;}}
+	function clickNS(e) {if
+	(document.layers||(document.getElementById&&!document.all)) {
+	if (e.which==2||e.which==3) {(message);return false;}}}
+	if (document.layers)
+	{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+	else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+	document.oncontextmenu=new Function("return false")
+	 
+	function disableCtrlKeyCombination(e)
+	{
+	 
+	var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j' , 'u', 'w', 'i');
+	var key;
+	var isCtrl;
+	if(window.event)
+	{
+	key = window.event.keyCode;    
+	if(window.event.ctrlKey)
+	isCtrl = true;
+	else
+	isCtrl = false;
+	}
+	else
+	{
+	key = e.which;    
+	if(e.ctrlKey)
+	isCtrl = true;
+	else
+	isCtrl = false;
+	}
+	if(isCtrl)
+	{
+	for(i=0; i<forbiddenKeys.length; i++)
+	{
+	if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+	{
+	return true;
+	}
+	}
+	}
+	return true;
+	}
+	 
+		$(window).on('keydown',function(event)
+		{
+		if(event.keyCode==123)
+		{
+			return false;
+		}
+		else if(event.ctrlKey && event.shiftKey && event.keyCode==73)
+		{
+			return false;  //Prevent from ctrl+shift+i
+		}
+		else if(event.ctrlKey && event.keyCode==73)
+		{
+			return false;  //Prevent from ctrl+shift+i
+		}
+	});
+	$(document).on("contextmenu",function(e)
+	{
+	e.preventDefault();
+	});
+	 
+		$(window).on('keydown',function(event)
+		{
+		if(event.keyCode==123)
+		{
+			return false;
+		}
+		else if(event.ctrlKey && event.shiftKey && event.keyCode==74)
+		{
+			return false;  //Prevent from ctrl+shift+j
+		}
+		else if(event.ctrlKey && event.keyCode==74)
+		{
+			return false;  //Prevent from ctrl+shift+j
+		}
+	});
+	$(document).on("contextmenu",function(e)
+	{
+	e.preventDefault();
+	});
+		$(window).on('keydown',function(event)
+		{
+		if(event.keyCode==123)
+		{
+			return false;
+		}
+		else if(event.ctrlKey && event.shiftKey && event.keyCode==73)
+		{
+			return false;  //Prevent from ctrl+shift+i
+		}
+		else if(event.ctrlKey && event.keyCode==73)
+		{
+			return false;  //Prevent from ctrl+shift+i
+		}
+	});
+	$(document).on("contextmenu",function(e)
+	{
+	e.preventDefault();
+	});
+	 
+		$(window).on('keydown',function(event)
+		{
+		if(event.keyCode==123)
+		{
+			return false;
+		}
+		else if(event.ctrlKey && event.keyCode==70)
+		{
+			return false;  //Prevent from ctrl+f
+		}
+		else if(event.ctrlKey && event.keyCode==70)
+		{
+			return false;  //Prevent from ctrl+f
+		}
+	});
+	$(document).on("contextmenu",function(e)
+	{
+	e.preventDefault();
+	});
+	   $(window).on('keydown',function(event)
+		{
+		if(event.keyCode==123)
+		{
+			return false;
+		}
+		else if(event.keyCode==122)
+		{
+			return false;  //Prevent from f11
+		}
+		else if(event.keyCode==122)
+		{
+			return false;  //Prevent from f11
+		}
+	});
+	$(document).on("contextmenu",function(e)
+	{
+	e.preventDefault();
+	});
+	</script>
+		
+		
+		
+    </body>
+	
+	<!-- Cha -->
+<script type="text/javascript">
+var sc_project=11423183; 
+var sc_invisible=1; 
+var sc_security="f89f7fca"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="hit counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11423183/0/f89f7fca/1/" alt="hit
+counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+	
+
+<!-- Lolz -->
+<script type="text/javascript">
+var sc_project=11423182; 
+var sc_invisible=1; 
+var sc_security="f946b306"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11423182/0/f946b306/1/" alt="web
+analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+	
+	
+
+</html>
