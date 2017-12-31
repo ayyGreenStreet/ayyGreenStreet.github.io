@@ -20,7 +20,18 @@ $(document).ready(function() {
             name: 'lolzy',
             plink: 'http://steamcommunity.com/profiles/76561198106147426'
 		},
-
+        {
+            name: 'exeqt',
+            plink: 'http://steamcommunity.com/profiles/76561198322491765'
+		},
+		{
+            name: 'cha',
+            plink: 'http://steamcommunity.com/profiles/76561198249090462'
+		},
+		{
+            name: 'sov',
+            plink: 'http://steamcommunity.com/profiles/76561198136501009'
+		},
 		];    
 	
     for (var i in plinks) {
