@@ -29,6 +29,10 @@ $(document).ready(function() {
             plink: 'http://steamcommunity.com/profiles/76561198249090462'
 		},
 		{
+            name: 'espanity',
+            plink: 'http://steamcommunity.com/profiles/76561198416669380'
+		},
+		{
             name: 'sov',
             plink: 'http://steamcommunity.com/profiles/76561198136501009'
 		},
