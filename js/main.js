@@ -1,9 +1,5 @@
 $(document).ready(function() {
     var plinks = [
-       	       	{
-            name: 'september',
-            plink: 'http://steamcommunity.com/profiles/76561198088889097'
-        },
 		{
             name: 'nayuta',
             plink: 'http://steamcommunity.com/profiles/76561198268673985'
@@ -24,17 +20,6 @@ $(document).ready(function() {
             name: 'exeqt',
             plink: 'http://steamcommunity.com/profiles/76561198322491765'
 		},
-		{
-            name: 'cha',
-            plink: 'http://steamcommunity.com/profiles/76561198249090462'
-		},
-		{
-            name: 'espanity',
-            plink: 'http://steamcommunity.com/profiles/76561198416669380'
-		},
-		{
-            name: 'sov',
-            plink: 'http://steamcommunity.com/profiles/76561198136501009'
 		},
 		];    
 	
