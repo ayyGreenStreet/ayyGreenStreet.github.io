@@ -20,7 +20,6 @@ $(document).ready(function() {
             name: 'exeqt',
             plink: 'http://steamcommunity.com/profiles/76561198322491765'
 		},
-		},
 		];    
 	
     for (var i in plinks) {
