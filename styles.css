@@ -34,3 +34,22 @@ background-size: 1800% 1800%;
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
 }
+
+.a {
+  color: #000000;
+  padding: 40px 0;
+  font-weight: 1000;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+.a .letter {
+  display: inline-block;
+  line-height: 1em;
+}
